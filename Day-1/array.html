@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h3>Array Methods (map, filter, reduce , find , some , every)</h3>
+
+    <script>
+
+        // finding an element in array
+        let numbers = [1, 2,3,4,5,6]
+        console.log(numbers[1]);
+
+        // map tranform array into another array 
+        const result = numbers.map((number)=>{
+            return number * 10;
+        })
+        console.log(result);
+
+        // filter method used to filter out element based on condition
+        const fiterNumber = numbers.filter((num)=>{
+            return num <=2
+        })
+        console.log(fiterNumber);
+
+        // reduce method used to reduce array to single value
+        const total = numbers.reduce((acc,curr)=>{
+            return acc + curr;
+        },0)
+        console.log(total);
+
+        // find method used to find an element based on condition
+        const users=[
+            {name:'John', age:25},
+            {name:'Jane', age:22},
+            {name:'Jim', age:30}
+        ]
+
+        const user= users.find((usersfind)=>{
+            return usersfind.age === 30
+        })
+        console.log(user);
+        
+        // every method used to check all element satisfy the condition &&
+        // some method used to check atleast one element satisfy the condition ||
+        
+        const marks=[40,55,34,76,99,18]
+
+        const allPassed=marks.every((mark)=>{
+            return mark >= 35
+        })
+        console.log(allPassed);
+
+        const anyPassed=marks.some((mark)=>{
+            return mark >= 35
+        })
+        console.log(anyPassed);
+
+    </script>
+</body>
+</html>
