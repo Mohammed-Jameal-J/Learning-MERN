@@ -91,7 +91,7 @@ const { id, name:userName, department: { id: deptId, name: deptName } } = employ
 console.log(id, userName, deptId, deptName); // 101 Bob 201 Sales
 
 const studentInfo={
-    name: "Charliee",
+    name: "Charlie",
     age: 23,
     subjects: { math: 95, science: 88, english: 92 }
 }
