@@ -83,7 +83,7 @@ const employee = {
   name: "Bob",
   department: {
     id: 201,
-    name: "Sales"
+    name: "Sale"
   }
 };
 
